@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite guice-stage="DEVELOPMENT" name="DigitalAdmin" >
+	<parameter name="browser" value="chrome" />
+	<parameter name="url"
+		value="https://circdevl.timeinc.com/digitaladmin/#/line-item-metadata/welcome" />
+	<!-- <listeners> <listener class-name="UtilityFunctions.WebDriverListener"></listener> 
+		</listeners> -->
+
+	<test name="Test_1">
+		<classes>
+			<class name="com.time.CMAS.DigitalAdmin.Login" />
+		</classes>
+	</test>
+	<test name="Test_2">
+		<classes>
+			<class name="com.time.CMAS.DigitalAdmin.SizePage_TCs" />
+		</classes>
+	</test>
+</suite>

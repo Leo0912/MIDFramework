@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suite of suites">
+    <suite-files>
+    	<suite-file path="TestSuites/CircModel_TestNG.xml" />
+        <suite-file path="TestSuites/PreferenceCenter_TestNG.xml" />
+        <suite-file path="TestSuites/DigitalAdmin_TestNG.xml" /> 
+    </suite-files>
+</suite>

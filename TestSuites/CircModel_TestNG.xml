@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite guice-stage="DEVELOPMENT" name="CircModel" >
+	<parameter name="browser" value="chrome"/>
+	<parameter name="url" value="https://circdevl.timeinc.com:8085/circmodel-2.0/Index.html#/Login/"/>
+	<!-- <listeners> <listener class-name="UtilityFunctions.WebDriverListener"></listener> 
+		</listeners> -->
+
+	<test name="Test_1">
+		<classes>
+			<class name="com.time.CMAS.CircModel.Login_CircModel" />
+		</classes>
+	</test>
+<!-- 	<test name="Test_2"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.time.CMAS.DigitalAdmin.SizePage_TCs" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+</suite>

@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite guice-stage="DEVELOPMENT" name="PreferenceCenter" parallel="tests"
+	thread-count="1">
+	<parameter name="browser" value="chrome"/>
+	<parameter name="url" value="https://testsite-csp.timecommerce.net/dashboard?MSRSMAG=SI"/>
+	<!-- <listeners> <listener class-name="UtilityFunctions.WebDriverListener"></listener> 
+		</listeners> -->
+
+	<test name="Test_1">
+		<classes>
+			<class name="com.time.CMAS.PreferenceCenter.Login_PC" />
+		</classes>
+	</test>
+<!-- 	<test name="Test_2"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.time.CMAS.DigitalAdmin.SizePage_TCs" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+</suite>
